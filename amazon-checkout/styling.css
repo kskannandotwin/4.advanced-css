@@ -46,6 +46,44 @@ form {
     flex: 3;
 }
 
+/* 1.1.2 shipping */
+.shipping {
+    text-align: center;
+}
+
+.shipping select {
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+/* 1.1.3 payment */
+.payment {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.payment div:nth-child(2) {
+    display: flex;
+}
+
+.payment div:nth-child(2) label {
+    flex: 1;
+    margin-top: 0.5em;
+}
+
+/* 1.1.4 checks */
+.checks {
+    display: flex;
+}
+
+.checks label {
+    flex: 1;
+}
+
+.checks label:nth-child(2) {
+    order: -1;
+}
+
 /* 1.2 comments */
 .comments {
     background-color: deepskyblue;
