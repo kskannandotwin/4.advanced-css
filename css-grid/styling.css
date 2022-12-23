@@ -1,0 +1,51 @@
+/*Let's make sure that the dimensions of any box includes its border and padding,
+this gives us an easy way of sizing our elements*/
+* {
+  box-sizing: border-box;
+}
+
+.container > div {
+  background-color: #66a5ad;
+  color: aliceblue;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  /* margin: 2px; */
+}
+
+.container {
+  /* height: 600px; */
+  /* height: 400px; */
+  /* height: 200px; */
+  /* height: 300px; */
+  height: 250px;
+
+  background-color: #07575b;
+
+  /* turning the container to a grid */
+  display: grid;
+
+  /* rows height */
+  /* grid-template-rows: 30px 30px 30px 30px; */
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  /* columns width */
+  /* grid-template-columns: 100px 1fr 2fr 3fr; */
+  /* grid-template-columns: 25% 1fr 2fr 3fr; */
+  /* grid-template-columns: 1fr 1fr 2fr 3fr; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-columns: repeat(4, 100px); */
+  /* grid-template-columns: repeat(4, 20%); */
+  /* grid-template-columns: repeat(4, minmax(300px, 1fr)); */
+  /* grid-template-columns: repeat(4, minmax(400px, 1fr)); */
+  /* grid-template-columns: repeat(4, minmax(400px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */ /* for preview 2 items */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  /* gutter */
+  grid-gap: 5px;
+  padding: 7px;
+}
