@@ -1,16 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  margin: 0;
+  padding: 0;
 }
 
 #container {
-  width: 1050px;
+  width: 90%;
   /* border: 1px solid grey; */
   margin: 0 auto;
 }
 
 #header {
-  height: 100px;
+  /* height: 100px; */
   padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h1 a {
@@ -21,16 +29,21 @@ h1 a {
 }
 
 #brand {
-  float: left;
+  /* float: left; */
+  flex: 50%;
 }
 
 #searchBox {
-  float: right;
+  /* float: right; */
   background: linear-gradient(#e4f2b9, #b7e953);
-  width: 400px;
-  height: 50px;
-  padding: 20px 20px 0 20px;
-  margin-top: 20px;
+  min-width: 400px;
+  /* height: 50px; */
+  padding: 20px;
+  /* margin-top: 20px; */
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
