@@ -1,0 +1,82 @@
+/*Let's make sure that the dimensions of any box includes its border and padding,
+this gives us an easy way of sizing our elements*/
+* {
+  box-sizing: border-box;
+}
+
+/*grid container*/
+.container1 {
+  height: 100vh;
+  background-color: #07575b;
+  /*    mention nested grids*/
+  display: grid;
+  grid-template-rows: repeat(4, 110px);
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, 500px);
+  grid-gap: 5px;
+  padding: 7px;
+
+  /* align items vertically inside their row */
+  /* align-items: start; */
+  /* align-items: end; */
+  /* align-items: stretch; */
+  /* align-items: baseline; */
+  /* align-items: center; */
+
+  /* align items horizontally inside their column */
+  /* justify-items: start; */
+  /* justify-items: end; */
+  /* justify-items: center; */
+
+  /* align both inside their row and column */
+  /* notes => place-items:  vertical horizontal */
+  /* place-items: center center; */
+  place-items: center stretch;
+
+  /* align the whole grid verticall */
+  /* align-content: start; */
+  /* align-content: end; */
+  /* align-content: center; */
+
+  /* align the whole grid horizontally */
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: center; */
+
+  /* align both inside their row and column */
+  /* notes => place-content:  vertical horizontal */
+  place-content: center center;
+}
+
+/*grid items*/
+div {
+  background-color: #66a5ad;
+  color: aliceblue;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.apple {
+  height: 100px;
+}
+
+.facebook {
+  height: 50px;
+}
+
+.microsoft {
+  height: 70px;
+}
+
+.samsung {
+  height: 80px;
+}
+
+.google {
+  height: 40px;
+}
+
+.amazon {
+  height: 35px;
+}
