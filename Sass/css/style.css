@@ -8,9 +8,9 @@ nav {
     font-size: 20px;
     padding: 20px; }
     nav a:hover {
-      background-color: yellow; }
+      background-color: #f3ee4c; }
     nav a:active {
-      background-color: greenyellow; }
+      background-color: #f0ea1c; }
     nav a.active {
       color: #b314db;
       font-weight: bold;
@@ -27,12 +27,18 @@ article div p {
   color: #316901;
   font-size: 20px; }
 
+article div:nth-child(1) h3:nth-child(1) {
+  transform: rotate(-5deg); }
+
+article div:nth-child(2) h3:nth-child(1) {
+  transform: rotate(-3deg); }
+
 .btn-wide, .btn-success {
-  width: 50%; }
+  width: 37.5%; }
 
 .btn-success, .btn-warning, .btn-error {
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   border: none;
   border-radius: 4px;
   cursor: pointer; }

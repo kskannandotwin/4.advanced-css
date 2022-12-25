@@ -1,9 +1,17 @@
 // nesting
 // sass: syntatically awesome style sheet
 
+// DRY = Don't Repeat Yourself
+// KISS = Keep it simple stupid
+
 @import "utils/variables";
 @import "components/navigation";
 @import "base/base";
+
+// create a mixin
+@mixin h_transform($angle: -5deg) {
+  transform: rotate($angle);
+}
 
 article {
   div {
@@ -16,15 +24,25 @@ article {
       font-size: 20px;
     }
   }
+  div:nth-child(1) {
+    h3:nth-child(1) {
+      @include h_transform();
+    }
+  }
+  div:nth-child(2) {
+    h3:nth-child(1) {
+      @include h_transform(-3deg);
+    }
+  }
 }
 
 .btn-wide {
-  width: 50%;
+  width: 300 / 800 * 100%;
 }
 
 %btn-common {
   color: white;
-  font-size: 20px;
+  font-size: 20px * 2;
   border: none;
   border-radius: 4px;
   cursor: pointer;

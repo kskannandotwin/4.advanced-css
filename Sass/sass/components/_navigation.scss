@@ -10,11 +10,11 @@ nav {
     padding: 20px;
 
     &:hover {
-      background-color: yellow;
+      background-color: darken($color1, 15%);
     }
 
     &:active {
-      background-color: greenyellow;
+      background-color: darken($color1, 25%);
     }
 
     &.active {
