@@ -27,7 +27,7 @@ article div p {
   color: #316901;
   font-size: 20px; }
 
-.btn-wide, .btn-success, .btn-warning, .btn-error {
+.btn-wide, .btn-success {
   width: 50%; }
 
 .btn-success, .btn-warning, .btn-error {
